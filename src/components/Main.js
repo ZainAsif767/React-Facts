@@ -1,10 +1,9 @@
 import React from "react"
-// import logo from "../images/logo512.png"
+
 
 export default function Main() {
     return (
         <div>
-            {/* <img src={logo} /> */}
             <main>
                 <h1 className="h1-text">Fun Facts About React</h1>
                 <ul className="facts">
