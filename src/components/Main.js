@@ -1,10 +1,10 @@
 import React from "react"
 
-
 export default function Main() {
     return (
         <div>
-            <main>
+            <main className="BG">
+
                 <h1 className="h1-text">Fun Facts About React</h1>
                 <ul className="facts">
                     <li>Was first released in 2013</li>

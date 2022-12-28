@@ -40,12 +40,36 @@ nav {
     margin-right: 7px;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+
+    .nav--icon {
+        animation: nav-icon-spin infinite 20s linear;
+    }
+}
+
+@keyframes nav-icon-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
 main {
     padding: 55px 27px;
     color: white;
+
+
+}
+
+.BG {
     background-image: url(./images/logo512.png);
-    background-position: 30rem 3rem;
     background-repeat: no-repeat;
+    background-position: right;
+
 }
 
 
