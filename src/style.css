@@ -147,8 +147,7 @@ main {
     flex: 1 1 auto;
     background-image: url("./images/logo-light.png");
     background-repeat: no-repeat;
-    background-position: right center;
-
+    background-position: center;
 
 }
 
