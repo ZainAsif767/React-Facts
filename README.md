@@ -1,9 +1,11 @@
 # React Facts - Project One
 This is a simple react static page made using  create react app.
+It has Toggler to switch between light and dark modes.
 
 ## Screenshot 
 
-![image](https://user-images.githubusercontent.com/98703238/211212692-513d9c2f-d54e-41f9-bf87-f520b9ed8def.png)
+![image](https://user-images.githubusercontent.com/98703238/211281114-efde2a47-f6ed-44ce-b520-0f38a3fba8f9.png)
+
 
 ## Links
 
