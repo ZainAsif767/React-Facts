@@ -3,19 +3,40 @@
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 body {
     margin: 0;
     font-family: Inter, sans-serif;
     background-color: #282D35;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 nav {
     display: flex;
     align-items: center;
-    background-color: #21222A;
+    background-color: white;
     height: 90px;
     padding: 30px 25px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 
+nav.dark {
+    background-color: #21222A;
 }
 
 .nav-logo-text,
@@ -40,6 +61,67 @@ nav {
     margin-right: 7px;
 }
 
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.toggle-slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggle-slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggle-slider-circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggle-slider-circle {
+    background-color: black;
+}
+
+
+.toggler-light {
+    color: #2B283A;
+}
+
+nav.dark .toggler-light {
+    color: #918E9B;
+}
+
+.toggle-dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggle-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggle-slider {
+    justify-content: flex-end;
+}
+
 @media (prefers-reduced-motion: no-preference) {
 
     .nav--icon {
@@ -60,16 +142,20 @@ nav {
 
 main {
     padding: 55px 27px;
-    color: white;
+    color: #2B283A;
+    background-color: white;
+    flex: 1 1 auto;
+    background-image: url("./images/logo-light.png");
+    background-repeat: no-repeat;
+    background-position: right center;
 
 
 }
 
-.BG {
-    background-image: url(./images/logo512.png);
-    background-repeat: no-repeat;
-    background-position: right;
-
+main.dark {
+    background-image: url("./images/logo-dark.png");
+    background-color: #282D35;
+    color: white;
 }
 
 
@@ -95,39 +181,36 @@ main {
 
 }
 
-.author {
+footer.dark {
+    background-color: #21222A;
+}
+
+#author {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
-}
-
-.author,
-a {
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    color: #DEEBF8;
-    font-weight: bold;
-    text-align: center;
-
-}
-
-.author {
     position: fixed;
     bottom: 0;
     padding-bottom: 25px;
     text-align: center;
     width: 100%;
-    display: flex;
+}
 
-
+#author>a {
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
 
 }
 
+
 .zain:hover {
     transition: 0.3s ease-out;
-    color: #DEEBF8;
-    border-bottom: 1px solid #DEEBF8;
+    color: black;
+    border-bottom: 1px solid black;
     padding: 7px;
 }
